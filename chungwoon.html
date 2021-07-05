@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>chungwoon</title>
+    <style>
+         h3{ text-align: center;}
+    </style>
+  </head>
+  <body>
+       <h3>지원서</h3>
+  <table align="center" border="3" width="800">
+    <tr>
+        <td rowspan="5" colspan="2" width="100" height="143" bgcolor="D5D5D5" align="center">사 &nbsp; 진  </td>
+    </tr>
+    <tr>
+        <th>이름</th>
+        <td><b><input type="text" size="50"placeholder="한글을 입력해주세요"></b></td>
+    </tr>
+    <tr>
+        <th>성별</th>
+        <td><input type="radio" name="ccc" id="data1">
+             <label for="data1">남</label>
+            <input type="radio" name="ccc" id="data2">
+             <label for="data2">여</label></td>
+    </tr>
+     <tr>
+         <th>생년월일</th>
+         <td>
+           <select>
+                  <option>출생연도 선택</option>
+                   <option>1950</option>
+                   <option>1960</option>
+                   <option>1970</option>
+                   <option>1980</option>
+                   <option>1997</option>
+                   <option>1998</option>
+                   <option>2000</option>
+           </select>
+        </td>
+     </tr>
+    <tr>
+         <th>연락처</th>
+         <td>
+             <select>
+                   <option>선택</option>
+                   <option>010</option>
+                   <option>070</option>
+             </select>
+
+             <span>-</span>
+
+             <input type="text" maxlength="4" size="3">
+
+             <span>-</span>
+
+             <input type="text" maxlength="4" size="3">
+         </td>
+    </tr>
+     <tr>
+        <td rowspan="3" width="90" height="110" align="center" bgcolor="#DCDCDC">경력사항</td>
+        </tr>
+        <tr>
+           <td colspan="2" bgcolor="#DCDCDC" align="center">일자</td>
+           <td colspan="2" bgcolor="#DCDCDC" align="center">직종</td>
+       </tr>
+       <tr>
+        <td colspan="3"><input type="text" size="102">
+          <input type="text" size="102">
+          <input type="text" size="102">
+          <input type="text" size="102">
+      </td>
+    </tr>
+      <tr>
+          <td bgcolor="#DCDCDC" align="center">자격증</td>
+          <td colspan="3">
+              <select>
+                   <option>선택하기</option>
+                   <option>opi</option>
+                   <option>opic</option>
+                   <option>toeic</option>
+                   <option>topic</option>
+                   <option>tovib</option>
+              </select>
+
+              <span>:</span>
+
+              <input type="text" maxlength="8">
+              <input type="checkbox" id="data5">
+              <label for="data5">기타</label>
+          </td>
+    </tr>
+     <tr>
+           <td height="250" bgcolor="#DCDCDC">입사후 포부</td>
+           <td colspan="3"><textarea cols="92" rows="16" ><c:out value="${content}" /></textarea>
+          </td>
+     </tr>
+  </table>
+  <button onClick="alert('접수가 완료되었습니다. 민병욱찡')">제출하기</button>
+  </body>
+</html>
